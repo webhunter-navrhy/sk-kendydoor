@@ -27,24 +27,18 @@ a { color: inherit; }
 .tlacidla { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 
 .hero { padding-block: clamp(2.5rem, 7vw, 6rem); }
-.hero-g { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+.hero-g { display: grid; grid-template-columns: .85fr 1.5fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
 .stitok { font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--red); margin-bottom: 1rem; }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.9rem); font-weight: 700; }
 .uvod { margin-top: 1.4rem; font-size: 1.15rem; color: var(--muted); max-width: 34rem; }
-.hero-f img { width: 100%; aspect-ratio: 976/505; object-fit: cover; border-bottom: 6px solid var(--red); }
+.hero-f img { width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: 30% center; border-bottom: 6px solid var(--red); }
 
-.fakta { background: var(--graf); color: #fff; }
-.fakta-g { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding-block: 1.8rem; }
-.fakta p { font-size: .92rem; color: #cfcfd4; line-height: 1.4; }
-.fakta b { display: block; color: #fff; font-size: 1.25rem; font-weight: 600; margin-bottom: .2rem; }
 
 .sekcia { padding-block: clamp(4rem, 9vw, 7.5rem) 0; }
 .sekcia:last-of-type { padding-bottom: clamp(4rem, 9vw, 7.5rem); }
 .sekcia h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); font-weight: 700; }
 .podnadpis { margin-top: 1rem; color: var(--muted); max-width: 40rem; }
 .kol-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.8rem; }
-.kol-nav a { font-size: .9rem; text-decoration: none; border: 1px solid var(--line); padding: .35rem .8rem; border-radius: 2rem; background: #fff; }
-.kol-nav a:hover { border-color: var(--red); color: var(--red); }
 
 .kolekcia { margin-top: 3.2rem; }
 .kolekcia h3 { font-size: 1.35rem; margin-bottom: 1rem; }
@@ -86,10 +80,23 @@ blockquote { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 4px solid va
 .paticka { background: var(--graf); color: #cfcfd4; font-size: .9rem; padding-block: 1.6rem; }
 .paticka .wrap { display: flex; flex-wrap: wrap; gap: .5rem 2rem; }
 
-@media (max-width: 62rem) { .hero-g, .na-mieru, .o-nas, .kontakt-g { grid-template-columns: 1fr; } .fakta-g { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 62rem) { .hero-g, .na-mieru, .o-nas, .kontakt-g { grid-template-columns: 1fr; } }
 @media (max-width: 40rem) {
   .hlavicka .wrap { flex-wrap: wrap; } .hlavicka nav { gap: 1rem; font-size: .85rem; width: 100%; overflow-x: auto; }
-  .logo img { height: 34px; } .rad::before, .rad::after { content: ''; flex: 0 0 max(.2rem, calc((100vw - 72rem) / 2 - 1.4rem)); }
-.rad li { width: 7.5rem; } .tlacidla .btn { width: 100%; text-align: center; }
+  .tlacidla .btn { width: 100%; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.kol-nav button { font: inherit; font-size: .95rem; border: 1px solid var(--line); padding: .6rem 1rem; min-height: 44px; border-radius: 2rem; background: #fff; cursor: pointer; color: var(--graf); }
+.kol-nav button:hover { border-color: var(--red); color: var(--red); }
+.kol-nav button[aria-selected="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+.js .kolekcia[hidden] { display: none; }
+.kolekcia { margin-top: 2rem; }
+.kolekcia .rad { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 1.6rem 1.2rem; overflow: visible; padding: 2rem 1.4rem 0; max-width: 72rem; margin-inline: auto; border-bottom: 0; }
+.kolekcia .rad::before, .kolekcia .rad::after { display: none; }
+.kolekcia .rad li { width: auto; }
+.kolekcia { background: var(--stena); border-bottom: 10px solid var(--graf); padding-bottom: 1.2rem; }
+.kolekcia h3 { padding-top: 1.8rem; }
+.na-obraz { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.na-obraz img { width: 100%; height: auto; aspect-ratio: 980/200; object-fit: cover; }
+@media (max-width: 40rem) { .hlavicka nav a { padding: .8rem .2rem; } .logo img { max-width: 184px; height: auto; } .hero-f img { aspect-ratio: 16/11; } }

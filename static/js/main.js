@@ -19,3 +19,20 @@
     });
   });
 })();
+
+// Záložky kolekcií
+(function () {
+  var tabs = document.querySelectorAll('.kol-nav [role=tab]');
+  if (!tabs.length) return;
+  document.documentElement.classList.add('js');
+  function otvor(t) {
+    tabs.forEach(function (x) {
+      var on = x === t;
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      var p = document.getElementById(x.getAttribute('aria-controls'));
+      p.hidden = !on;
+    });
+  }
+  tabs.forEach(function (t) { t.addEventListener('click', function () { otvor(t); }); });
+  otvor(tabs[0]);
+})();

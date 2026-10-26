@@ -1,0 +1,17 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Hero na PC: fotka interiéru zabírá jen asi třetinu šířky v rámečku vpravo a pod ní je tmavý pruh se statistikami (1998 / Dyhy / 132 dekorov / CNC). To je šablonový vzor a stejné údaje se znovu opakují v Histórii v sekci O spoločnosti. Oprava: dát do hero velkou fotku interiéru s dverami přes celou šířku nebo aspoň přes 60 % šířky, nadpis a CTA nechat vlevo a tmavý pruh se statistikami odstranit. Fakta stačí v Histórii.",
+    "Sekce Kolekcie dverí: deset stejných řádků s pruhem dveří jde za sebou (Klasik, NEW, Horizontal… Modern). Na PC je každý řádek useknutý u pravého okraje bez šipek a bez náznaku, že se dá posouvat, a čipy s kolekcemi nahoře nic nefiltrují. Výsledek je nekonečný jednotvárný scroll, tedy přesně výtka u Sklozamu („vše na titulce, rolování“). Oprava: čipy udělat jako záložky, které ukážou vždy jen jednu kolekci v mřížce (na PC 6–7 dveří na řádek, na mobilu 2 sloupce), nebo kolekce dát jako rozcestník s náhledem a každou na vlastní podstránku. Za Modern odstranit prázdnou světlou plochu před sekcí Dvere na mieru.",
+    "Mobilní hlavička a sekce Dvere na mieru: logo je roztažené 1,33× (logo.jpg má 184 px a vykresluje se na 245 px) a menu je řádek čtyř drobných odkazů vysokých 37 px (QA hlásí 19 dotykových cílů pod 40 px). Dvere na mieru je navíc jen tmavý textový blok bez obrazu. Oprava: použít logo ve 2× rozlišení nebo jako SVG, menu dát do hamburgeru s položkami aspoň 44 px. Do sekce Dvere na mieru přidat skutečnou fotku atypických dveří nebo realizace z webu klienta, aby nabídka práce na míru měla obraz."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Logo KENDY DOOR je vlevo v hlavičce a paleta červená + antracit vychází z brandu klienta, takže se pozná, čí web to je.",
+    "Používá reálný katalog dveří klienta (81 obrázků), fotky jsou ostré, ve WebP a nejsou roztažené. Stránka je lehká (PC 2 MB, mobil 1 MB).",
+    "Kontakt je úplný a srozumitelný: provozovna, dvě telefonní čísla podle účelu, e-maily, IČO a formulář s nápovědou, co do poptávky napsat. Na žádné šířce nic nepřetéká.",
+    "Fakta (1998, 2004, 2011, 132 dekorov) jsou podložená historií firmy, nic nevypadá vymyšleně."
+  ],
+  "verdikt": "Je to korektní a pravdivý katalog v brandu klienta, ale chybí silný obraz i koncept: hero s malou fotkou a pruhem statistik a pod ním deset stejných řádků dveří působí jako šablona a nekonečný scroll. Opravit hero, kolekce převést na záložky nebo podstránky a doladit mobilní hlavičku, pak teprve odeslat.",
+  "_hash": "a5405453e5d8e0858053a98ad78a24d8df97e8e5"
+}

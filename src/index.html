@@ -14,32 +14,24 @@
   </div>
 </section>
 
-<section class="fakta" aria-label="O výrobe">
-  <div class="wrap fakta-g">
-    <p><b>Od roku 1998</b>drevárska výroba z masívu</p>
-    <p><b>Dyhy</b>z európskych aj cudzokrajných drevín</p>
-    <p><b>132 dekorov</b>termoplastických fólií</p>
-    <p><b>CNC</b>výroba od roku 2011</p>
-  </div>
-</section>
-
 <section class="sekcia" id="kolekcie">
   <div class="wrap">
     <h2>Kolekcie dverí</h2>
     <p class="podnadpis">Desať kolekcií od klasiky po moderné línie. Obrázky dverí sú ilustračné a detaily sa špecifikujú pri objednávke.</p>
-    <nav class="kol-nav" aria-label="Kolekcie">{% for k in data.kolekcie %}<a href="#k-{{ k.id }}">{{ k.nazev }}</a>{% endfor %}</nav>
+    <div class="kol-nav" role="tablist" aria-label="Kolekcie">{% for k in data.kolekcie %}<button type="button" role="tab" id="t-{{ k.id }}" aria-controls="k-{{ k.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ k.nazev }}</button>{% endfor %}</div>
   </div>
   {% for k in data.kolekcie %}
-  <div class="kolekcia" id="k-{{ k.id }}">
+  <div class="kolekcia" id="k-{{ k.id }}" role="tabpanel" aria-labelledby="t-{{ k.id }}">
     <div class="wrap"><h3>Kolekcia {{ k.nazev }} <small>{{ k.dvere|length }} modelov</small></h3></div>
-    <ul class="rad" role="list" tabindex="0" aria-label="Kolekcia {{ k.nazev }}">
-      {% for d in k.dvere %}<li>{{ img('dvere/' ~ d, 'Dvere ' ~ k.nazev ~ ' ' ~ loop.index, sizes='200px', eager=false) }}<span>{{ '%02d' % loop.index }}</span></li>{% endfor %}
+    <ul class="rad" role="list">
+      {% for d in k.dvere %}<li>{{ img('dvere/' ~ d, 'Dvere ' ~ k.nazev ~ ' ' ~ loop.index, sizes='(min-width: 62rem) 11rem, 40vw', eager=false) }}<span>{{ '%02d' % loop.index }}</span></li>{% endfor %}
     </ul>
   </div>
   {% endfor %}
 </section>
 
 <section class="sekcia tmava" id="na-mieru">
+  <div class="wrap na-obraz">{{ img('onas.jpg', 'Interiérové dvere KENDY DOOR v obývacej izbe', sizes='(min-width: 72rem) 72rem, 100vw', eager=false) }}</div>
   <div class="wrap na-mieru">
     <h2>Dvere na mieru</h2>
     <div>

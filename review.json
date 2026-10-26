@@ -1,17 +1,17 @@
 {
-  "znamka": 6,
+  "znamka": 7,
   "slabiny": [
-    "Hero na PC: fotka interiéru zabírá jen asi třetinu šířky v rámečku vpravo a pod ní je tmavý pruh se statistikami (1998 / Dyhy / 132 dekorov / CNC). To je šablonový vzor a stejné údaje se znovu opakují v Histórii v sekci O spoločnosti. Oprava: dát do hero velkou fotku interiéru s dverami přes celou šířku nebo aspoň přes 60 % šířky, nadpis a CTA nechat vlevo a tmavý pruh se statistikami odstranit. Fakta stačí v Histórii.",
-    "Sekce Kolekcie dverí: deset stejných řádků s pruhem dveří jde za sebou (Klasik, NEW, Horizontal… Modern). Na PC je každý řádek useknutý u pravého okraje bez šipek a bez náznaku, že se dá posouvat, a čipy s kolekcemi nahoře nic nefiltrují. Výsledek je nekonečný jednotvárný scroll, tedy přesně výtka u Sklozamu („vše na titulce, rolování“). Oprava: čipy udělat jako záložky, které ukážou vždy jen jednu kolekci v mřížce (na PC 6–7 dveří na řádek, na mobilu 2 sloupce), nebo kolekce dát jako rozcestník s náhledem a každou na vlastní podstránku. Za Modern odstranit prázdnou světlou plochu před sekcí Dvere na mieru.",
-    "Mobilní hlavička a sekce Dvere na mieru: logo je roztažené 1,33× (logo.jpg má 184 px a vykresluje se na 245 px) a menu je řádek čtyř drobných odkazů vysokých 37 px (QA hlásí 19 dotykových cílů pod 40 px). Dvere na mieru je navíc jen tmavý textový blok bez obrazu. Oprava: použít logo ve 2× rozlišení nebo jako SVG, menu dát do hamburgeru s položkami aspoň 44 px. Do sekce Dvere na mieru přidat skutečnou fotku atypických dveří nebo realizace z webu klienta, aby nabídka práce na míru měla obraz."
+    "Mobilní hlavička (390/360 px) zůstává neopravená a logo je na tom hůř. logo.jpg má 184 px a vykresluje se na 368 px (2,00×), takže je rozmazané. Menu je pořád řádek čtyř odkazů pod logem a hlavička zabírá zhruba 105 px výšky. Oprava: použít logo jako SVG nebo export aspoň 2× (≥ 400 px šířky) a zobrazit ho nanejvýš na ~180 px. Menu dát do hamburgeru s položkami vysokými aspoň 44 px a hlavičku stáhnout pod 64 px.",
+    "Sekce Dvere na mieru na PC: přidaná fotka je jen úzký panoramatický pruh nad tmavým blokem a pohovka i dveře jsou v něm useknuté. Mezi gridem kolekcí a tmavou sekcí zůstává světlý prázdný pás. Oprava: fotku atypických dveří dát vedle textu do dvou sloupců (foto ~50 %, výška min. 420 px, ořez tak, aby byly vidět celé dveře) a světlý pás mezi Kolekciami a Dvere na mieru odstranit.",
+    "Kontakt na mobilu: telefony 0948 766 699 a 0948 766 572, e-maily info@/obchod@kendydoor.sk a „Zobraziť na mape“ mají dotykovou plochu jen 16–19 px (QA). Oprava: každý kontakt udělat jako řádek nebo tlačítko vysoké aspoň 44 px (tel:, mailto:) s větším odsazením mezi položkami."
   ],
   "zavazne": [],
   "silne": [
-    "Logo KENDY DOOR je vlevo v hlavičce a paleta červená + antracit vychází z brandu klienta, takže se pozná, čí web to je.",
-    "Používá reálný katalog dveří klienta (81 obrázků), fotky jsou ostré, ve WebP a nejsou roztažené. Stránka je lehká (PC 2 MB, mobil 1 MB).",
-    "Kontakt je úplný a srozumitelný: provozovna, dvě telefonní čísla podle účelu, e-maily, IČO a formulář s nápovědou, co do poptávky napsat. Na žádné šířce nic nepřetéká.",
-    "Fakta (1998, 2004, 2011, 132 dekorov) jsou podložená historií firmy, nic nevypadá vymyšleně."
+    "Kolekcie dverí jsou teď funkční záložky. Vždy se ukáže jen jedna kolekce v mřížce (PC 6 na řádek, mobil 2 sloupce), takže jednotvárný nekonečný scroll zmizel.",
+    "Hero na PC už nemá tmavý pruh se statistikami. Fotka interiéru má zhruba 60 % šířky obsahu a fakta zůstala jen v Histórii.",
+    "Logo KENDY DOOR a červená z brandu jsou použité důsledně. Paleta je světlá a klidná a obsah vychází ze skutečného webu (kolekce, historie 1998/2004/2011, adresa, IČO, oba telefony a e-maily).",
+    "Dvere na mieru má nově obraz a jasné CTA „Poslať predstavu“. Kontaktní formulář má předvyplněnou nápovědu (kolekcia, rozmery, povrch)."
   ],
-  "verdikt": "Je to korektní a pravdivý katalog v brandu klienta, ale chybí silný obraz i koncept: hero s malou fotkou a pruhem statistik a pod ním deset stejných řádků dveří působí jako šablona a nekonečný scroll. Opravit hero, kolekce převést na záložky nebo podstránky a doladit mobilní hlavičku, pak teprve odeslat.",
-  "_hash": "a5405453e5d8e0858053a98ad78a24d8df97e8e5"
+  "verdikt": "Hero a kolekce jsou opravené dobře a web je teď přehledný katalog. Mobilní hlavička ale zůstala neopravená, logo je dokonce roztažené 2× a fotka v Dvere na mieru je jen useknutý pruh, takže to na odeslání ještě není.",
+  "_hash": "36d4a9e96ed3c6fba31cd0298f2cb3dd40c7317d"
 }

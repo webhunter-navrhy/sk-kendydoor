@@ -17,6 +17,7 @@ a { color: inherit; }
 .hlavicka { position: sticky; top: 0; z-index: 5; background: var(--stena); border-bottom: 1px solid var(--line); }
 .hlavicka .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; }
 .logo img { height: 40px; width: auto; }
+.menu-tl { display: none; }
 .hlavicka nav { display: flex; gap: 1.6rem; font-size: .95rem; font-weight: 500; }
 .hlavicka nav a { text-decoration: none; padding: .4rem 0; border-bottom: 2px solid transparent; }
 .hlavicka nav a:hover { border-color: var(--red); }
@@ -50,8 +51,8 @@ a { color: inherit; }
 .rad span { display: block; font-size: .8rem; color: var(--muted); padding: .5rem 0 .6rem; }
 .rad:focus-visible { outline: 3px solid var(--red); outline-offset: -3px; }
 
-.tmava { background: var(--graf); color: #fff; margin-top: clamp(4rem, 9vw, 7.5rem); padding-block: clamp(3.5rem, 8vw, 6rem); }
-.na-mieru { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
+.tmava { background: var(--graf); color: #fff; margin-top: 0; padding-block: clamp(3.5rem, 8vw, 6rem); }
+.na-mieru { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
 .na-mieru p + p { margin-top: 1rem; } .na-mieru .btn { margin-top: .6rem; }
 .tmava { padding-top: clamp(3.5rem, 8vw, 6rem); }
 
@@ -82,7 +83,13 @@ blockquote { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 4px solid va
 
 @media (max-width: 62rem) { .hero-g, .na-mieru, .o-nas, .kontakt-g { grid-template-columns: 1fr; } }
 @media (max-width: 40rem) {
-  .hlavicka .wrap { flex-wrap: wrap; } .hlavicka nav { gap: 1rem; font-size: .85rem; width: 100%; overflow-x: auto; }
+  .hlavicka .wrap { flex-wrap: wrap; padding-block: .4rem; } .logo img { height: 36px; width: auto; } .logo { display: flex; align-items: center; min-height: 44px; }
+  .menu-tl { display: grid; place-items: center; width: 44px; height: 44px; background: none; border: 1px solid var(--line); border-radius: 2px; cursor: pointer; }
+  .menu-tl span, .menu-tl span::before, .menu-tl span::after { display: block; width: 20px; height: 2px; background: var(--graf); content: ''; position: relative; }
+  .menu-tl span::before { position: absolute; top: -6px; } .menu-tl span::after { position: absolute; top: 6px; }
+  .hlavicka nav { display: none; width: 100%; flex-direction: column; gap: 0; font-size: 1rem; }
+  .hlavicka.otvorene nav { display: flex; }
+  .hlavicka nav a { display: flex; align-items: center; min-height: 44px; border-top: 1px solid var(--line); border-bottom: 0; }
   .tlacidla .btn { width: 100%; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -95,8 +102,11 @@ blockquote { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 4px solid va
 .kolekcia .rad { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 1.6rem 1.2rem; overflow: visible; padding: 2rem 1.4rem 0; max-width: 72rem; margin-inline: auto; border-bottom: 0; }
 .kolekcia .rad::before, .kolekcia .rad::after { display: none; }
 .kolekcia .rad li { width: auto; }
-.kolekcia { background: var(--stena); border-bottom: 10px solid var(--graf); padding-bottom: 1.2rem; }
+.kolekcia { background: var(--stena); border-bottom: 0; padding-bottom: 1.2rem; }
 .kolekcia h3 { padding-top: 1.8rem; }
-.na-obraz { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
-.na-obraz img { width: 100%; height: auto; aspect-ratio: 980/200; object-fit: cover; }
-@media (max-width: 40rem) { .hlavicka nav a { padding: .8rem .2rem; } .logo img { max-width: 184px; height: auto; } .hero-f img { aspect-ratio: 16/11; } }
+.na-obraz img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; object-position: center; }
+.na-mieru h2 { margin-bottom: 1.2rem; }
+.k-r { display: grid; }
+.k-r b { margin-bottom: .2rem; }
+.k-r a { display: flex; align-items: center; min-height: 44px; }
+@media (max-width: 40rem) { .hero-f img { aspect-ratio: 16/11; } }

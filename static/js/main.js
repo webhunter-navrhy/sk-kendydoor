@@ -36,3 +36,11 @@
   tabs.forEach(function (t) { t.addEventListener('click', function () { otvor(t); }); });
   otvor(tabs[0]);
 })();
+
+// Menu na mobilu
+(function () {
+  var b = document.querySelector('.menu-tl'); if (!b) return;
+  var h = b.closest('.hlavicka');
+  b.addEventListener('click', function () { var o = h.classList.toggle('otvorene'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+  h.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { h.classList.remove('otvorene'); b.setAttribute('aria-expanded', 'false'); }); });
+})();

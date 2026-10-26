@@ -31,10 +31,10 @@
 </section>
 
 <section class="sekcia tmava" id="na-mieru">
-  <div class="wrap na-obraz">{{ img('onas.jpg', 'Interiérové dvere KENDY DOOR v obývacej izbe', sizes='(min-width: 72rem) 72rem, 100vw', eager=false) }}</div>
   <div class="wrap na-mieru">
-    <h2>Dvere na mieru</h2>
+    <div class="na-obraz">{{ img('onas.jpg', 'Interiérové dvere KENDY DOOR v obývacej izbe', sizes='(min-width: 62rem) 36rem, 100vw', eager=false) }}</div>
     <div>
+      <h2>Dvere na mieru</h2>
       <p>Dvere atypických rozmerov a farebné kombinácie nie sú pre nás problém. S architektmi spolupracujeme pri tvorbe interiéru, takže dvere vieme prispôsobiť vášmu priestoru, nie naopak.</p>
       <p>Napíšte nám rozmery a predstavu. Ďalšie informácie Vám radi poskytneme.</p>
       <p><a class="btn" href="#kontakt">Poslať predstavu</a></p>
@@ -72,11 +72,11 @@
     <div>
       <h2>Kontakt</h2>
       <p><b>Prevádzka</b><br>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
-      <p><b>Cenové ponuky</b><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
-      <p><b>Výroba</b><br><a href="tel:{{ site.kontakt.telefon_vyroba|replace(' ', '') }}">{{ site.kontakt.telefon_vyroba }}</a></p>
-      <p><b>E-mail</b><br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="mailto:{{ site.kontakt.email2 }}">{{ site.kontakt.email2 }}</a></p>
+      <p class="k-r"><b>Cenové ponuky</b><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p class="k-r"><b>Výroba</b><a href="tel:{{ site.kontakt.telefon_vyroba|replace(' ', '') }}">{{ site.kontakt.telefon_vyroba }}</a></p>
+      <p class="k-r"><b>E-mail</b><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><a href="mailto:{{ site.kontakt.email2 }}">{{ site.kontakt.email2 }}</a></p>
       <p class="drobne">Mikuláš Šimkovič, Kendice 278, 082 01 Kendice<br>IČO: 41341678 · DIČ: SK 1032266191</p>
-      <p><a href="https://www.google.com/maps/search/?api=1&query=Budovate%C4%BEsk%C3%A1+48+Pre%C5%A1ov" rel="noopener">Zobraziť na mape</a></p>
+      <p class="k-r"><a href="https://www.google.com/maps/search/?api=1&query=Budovate%C4%BEsk%C3%A1+48+Pre%C5%A1ov" rel="noopener">Zobraziť na mape</a></p>
     </div>
     <div>{% include "_formular.html" %}</div>
   </div>

@@ -24,8 +24,9 @@
 <a class="skip" href="#obsah">Preskočiť na obsah</a>
 <header class="hlavicka">
   <div class="wrap">
-    <a href="{{ url('') }}" class="logo">{% if site.logo %}<img src="{{ base }}{{ site.logo }}" alt="{{ site.nazev }}" height="40">{% else %}{{ site.nazev }}{% endif %}</a>
-    <nav aria-label="Hlavné">
+    <a href="{{ url('') }}" class="logo">{% if site.logo %}<img src="{{ base }}{{ site.logo }}" alt="{{ site.nazev }}" width="144" height="40">{% else %}{{ site.nazev }}{% endif %}</a>
+    <button type="button" class="menu-tl" aria-expanded="false" aria-controls="hl-nav" aria-label="Menu"><span></span></button>
+    <nav id="hl-nav" aria-label="Hlavné">
       {% for n in site.nav %}<a href="{{ n.href if n.href.startswith(('#', 'http', 'tel:', 'mailto:')) else url(n.href) }}">{{ n.text }}</a> {% endfor %}
     </nav>
   </div>

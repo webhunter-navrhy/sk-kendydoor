@@ -110,3 +110,4 @@ blockquote { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 4px solid va
 .k-r b { margin-bottom: .2rem; }
 .k-r a { display: flex; align-items: center; min-height: 44px; }
 @media (max-width: 40rem) { .hero-f img { aspect-ratio: 16/11; } }
+.paticka a { display: inline-flex; align-items: center; min-height: 44px; } .paticka p { margin: 0; }

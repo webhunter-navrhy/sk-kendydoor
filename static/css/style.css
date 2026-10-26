@@ -111,3 +111,4 @@ blockquote { margin: 1.6rem 0 0; padding-left: 1.2rem; border-left: 4px solid va
 .k-r a { display: flex; align-items: center; min-height: 44px; }
 @media (max-width: 40rem) { .hero-f img { aspect-ratio: 16/11; } }
 .paticka a { display: inline-flex; align-items: center; min-height: 44px; } .paticka p { margin: 0; }
+.na-obraz img { object-position: 88% center; } @media (max-width: 62rem) { .na-obraz img { min-height: 0; height: auto; aspect-ratio: 4/3; } }

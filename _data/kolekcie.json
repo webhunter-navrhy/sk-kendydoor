@@ -1,0 +1,140 @@
+[
+ {
+  "id": "klasik",
+  "nazev": "Klasik",
+  "dvere": [
+   "klasik-01.png",
+   "klasik-02.png",
+   "klasik-03.png",
+   "klasik-04.png",
+   "klasik-05.png",
+   "klasik-06.png",
+   "klasik-07.png",
+   "klasik-08.png",
+   "klasik-09.png",
+   "klasik-10.png",
+   "klasik-11.png"
+  ]
+ },
+ {
+  "id": "new",
+  "nazev": "NEW",
+  "dvere": [
+   "new-01.png",
+   "new-02.png",
+   "new-03.png",
+   "new-04.png",
+   "new-05.png",
+   "new-06.png",
+   "new-07.png"
+  ]
+ },
+ {
+  "id": "horizontal",
+  "nazev": "Horizontal",
+  "dvere": [
+   "horizontal-01.png",
+   "horizontal-02.png",
+   "horizontal-03.png",
+   "horizontal-04.png",
+   "horizontal-05.png",
+   "horizontal-06.png",
+   "horizontal-07.png",
+   "horizontal-08.png",
+   "horizontal-09.png"
+  ]
+ },
+ {
+  "id": "vertical",
+  "nazev": "Vertical",
+  "dvere": [
+   "vertical-01.png",
+   "vertical-02.png",
+   "vertical-03.png",
+   "vertical-04.png",
+   "vertical-05.png",
+   "vertical-06.png",
+   "vertical-07.png",
+   "vertical-08.png",
+   "vertical-09.png",
+   "vertical-10.png",
+   "vertical-11.png",
+   "vertical-12.png",
+   "vertical-13.png"
+  ]
+ },
+ {
+  "id": "diagonal",
+  "nazev": "Diagonal",
+  "dvere": [
+   "diagonal-01.png",
+   "diagonal-02.png",
+   "diagonal-03.png",
+   "diagonal-04.png",
+   "diagonal-05.png",
+   "diagonal-06.png"
+  ]
+ },
+ {
+  "id": "wave-h",
+  "nazev": "Wave Horizontal",
+  "dvere": [
+   "wave-h-01.png",
+   "wave-h-02.png",
+   "wave-h-03.png",
+   "wave-h-04.png",
+   "wave-h-05.png",
+   "wave-h-06.png"
+  ]
+ },
+ {
+  "id": "wave-v",
+  "nazev": "Wave Vertical",
+  "dvere": [
+   "wave-v-01.png",
+   "wave-v-02.png",
+   "wave-v-03.png",
+   "wave-v-04.png",
+   "wave-v-05.png",
+   "wave-v-06.png"
+  ]
+ },
+ {
+  "id": "vidiecky1",
+  "nazev": "Vidiecký štýl 1",
+  "dvere": [
+   "vidiecky1-01.png",
+   "vidiecky1-02.png",
+   "vidiecky1-03.png",
+   "vidiecky1-04.png",
+   "vidiecky1-05.png",
+   "vidiecky1-06.png",
+   "vidiecky1-07.png"
+  ]
+ },
+ {
+  "id": "vidiecky2",
+  "nazev": "Vidiecký štýl 2",
+  "dvere": [
+   "vidiecky2-01.png",
+   "vidiecky2-02.png",
+   "vidiecky2-03.png",
+   "vidiecky2-04.png",
+   "vidiecky2-05.png",
+   "vidiecky2-06.png"
+  ]
+ },
+ {
+  "id": "modern",
+  "nazev": "Modern",
+  "dvere": [
+   "modern-01.png",
+   "modern-02.png",
+   "modern-03.png",
+   "modern-04.png",
+   "modern-05.png",
+   "modern-06.png",
+   "modern-07.png"
+  ]
+ }
+]

@@ -1,0 +1,53 @@
+{
+ "slug": "sk-kendydoor",
+ "nazev": "KENDY DOOR",
+ "url": "https://webhunter-navrhy.github.io/sk-kendydoor/",
+ "base": "/sk-kendydoor/",
+ "lang": "sk",
+ "popis": "Atypické interiérové dvere KENDY DOOR z Prešova: kolekcie dverí, dvere na mieru, dyhy a termoplastické fólie, výroba na CNC.",
+ "navrh": true,
+ "domena": "",
+ "og_image": "hero.jpg",
+ "logo": "logo.jpg",
+ "theme_color": "#edeef2",
+ "typ": "LocalBusiness",
+ "ico": "41341678",
+ "kontakt": {
+  "email": "info@kendydoor.sk",
+  "telefon": "0948 766 699",
+  "telefon_vyroba": "0948 766 572",
+  "email2": "obchod@kendydoor.sk",
+  "adresa": {
+   "ulice": "Budovateľská 48",
+   "psc": "080 01",
+   "mesto": "Prešov",
+   "zeme": "SK"
+  }
+ },
+ "oteviraci_doba": [],
+ "sameas": [],
+ "cenove_rozpeti": "",
+ "formular": {
+  "endpoint": "",
+  "demo": true,
+  "predmet": "Dopyt z webu KENDY DOOR"
+ },
+ "nav": [
+  {
+   "text": "Kolekcie",
+   "href": "#kolekcie"
+  },
+  {
+   "text": "Dvere na mieru",
+   "href": "#na-mieru"
+  },
+  {
+   "text": "O nás",
+   "href": "#o-nas"
+  },
+  {
+   "text": "Kontakt",
+   "href": "#kontakt"
+  }
+ ]
+}

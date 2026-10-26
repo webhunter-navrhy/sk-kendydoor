@@ -1,0 +1,92 @@
+{% extends "_base.html" %}
+{% set titulek = 'KENDY DOOR – atypické interiérové dvere, Prešov' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-g">
+    <div class="hero-t">
+      <p class="stitok">Stolárstvo Prešov</p>
+      <h1>Interiérové dvere, ktoré sa prispôsobia Vám</h1>
+      <p class="uvod">Vyrábame atypické interiérové dvere a zárubne. Dyhované alebo vo fólii, v desiatich kolekciách, a keď treba, presne na mieru.</p>
+      <p class="tlacidla"><a class="btn" href="#kolekcie">Pozrieť kolekcie</a> <a class="btn btn-2" href="#kontakt">Dopyt na cenovú ponuku</a></p>
+    </div>
+    <div class="hero-f">{{ img('hero.jpg', 'Interiér s tmavými interiérovými dverami KENDY DOOR', sizes='(min-width: 62rem) 46rem, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="fakta" aria-label="O výrobe">
+  <div class="wrap fakta-g">
+    <p><b>Od roku 1998</b>drevárska výroba z masívu</p>
+    <p><b>Dyhy</b>z európskych aj cudzokrajných drevín</p>
+    <p><b>132 dekorov</b>termoplastických fólií</p>
+    <p><b>CNC</b>výroba od roku 2011</p>
+  </div>
+</section>
+
+<section class="sekcia" id="kolekcie">
+  <div class="wrap">
+    <h2>Kolekcie dverí</h2>
+    <p class="podnadpis">Desať kolekcií od klasiky po moderné línie. Obrázky dverí sú ilustračné a detaily sa špecifikujú pri objednávke.</p>
+    <nav class="kol-nav" aria-label="Kolekcie">{% for k in data.kolekcie %}<a href="#k-{{ k.id }}">{{ k.nazev }}</a>{% endfor %}</nav>
+  </div>
+  {% for k in data.kolekcie %}
+  <div class="kolekcia" id="k-{{ k.id }}">
+    <div class="wrap"><h3>Kolekcia {{ k.nazev }} <small>{{ k.dvere|length }} modelov</small></h3></div>
+    <ul class="rad" role="list" tabindex="0" aria-label="Kolekcia {{ k.nazev }}">
+      {% for d in k.dvere %}<li>{{ img('dvere/' ~ d, 'Dvere ' ~ k.nazev ~ ' ' ~ loop.index, sizes='200px', eager=false) }}<span>{{ '%02d' % loop.index }}</span></li>{% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="sekcia tmava" id="na-mieru">
+  <div class="wrap na-mieru">
+    <h2>Dvere na mieru</h2>
+    <div>
+      <p>Dvere atypických rozmerov a farebné kombinácie nie sú pre nás problém. S architektmi spolupracujeme pri tvorbe interiéru, takže dvere vieme prispôsobiť vášmu priestoru, nie naopak.</p>
+      <p>Napíšte nám rozmery a predstavu. Ďalšie informácie Vám radi poskytneme.</p>
+      <p><a class="btn" href="#kontakt">Poslať predstavu</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sekcia" id="o-nas">
+  <div class="wrap o-nas">
+    <div>
+      <h2>O spoločnosti</h2>
+      <p>Mikuláš Šimkovič – Stolárstvo vyrába dvere KENDY DOOR z kvalitných surovín, ktoré v domácnosti pôsobia prirodzene a prinášajú pocit útulnosti a účelnú krásu spojenú s odolnosťou a pevnosťou.</p>
+      <blockquote>Vyrobiť vysoko kvalitné dvere, ktoré uspokoja každého nášho zákazníka.</blockquote>
+    </div>
+    <div>
+      <h3>História</h3>
+      <ol class="cas" role="list">
+        <li><b>1998</b> Vznik firmy, všeobecná drevárska výroba z masívu.</li>
+        <li><b>2004</b> Ponuka doplnená o dyhovanú povrchovú úpravu.</li>
+        <li><b>2011</b> Sortiment rozšírený o termoplastickú fóliu v 132 dekoroch a výroba zautomatizovaná CNC technológiou.</li>
+      </ol>
+      <h3>Čo robíme</h3>
+      <ul class="zoznam" role="list">
+        <li>Atypické interiérové dvere KENDY DOOR a zárubne</li>
+        <li>Dyhované polotovary: zárubne, dvere a lišty z MDF dosiek</li>
+        <li>Povrchová úprava dyhou z európskych aj cudzokrajných drevín</li>
+        <li>Povrchová úprava termoplastickou fóliou, 132 dekorov</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekcia kontakt" id="kontakt">
+  <div class="wrap kontakt-g">
+    <div>
+      <h2>Kontakt</h2>
+      <p><b>Prevádzka</b><br>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+      <p><b>Cenové ponuky</b><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p><b>Výroba</b><br><a href="tel:{{ site.kontakt.telefon_vyroba|replace(' ', '') }}">{{ site.kontakt.telefon_vyroba }}</a></p>
+      <p><b>E-mail</b><br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="mailto:{{ site.kontakt.email2 }}">{{ site.kontakt.email2 }}</a></p>
+      <p class="drobne">Mikuláš Šimkovič, Kendice 278, 082 01 Kendice<br>IČO: 41341678 · DIČ: SK 1032266191</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Budovate%C4%BEsk%C3%A1+48+Pre%C5%A1ov" rel="noopener">Zobraziť na mape</a></p>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}

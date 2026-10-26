@@ -1,0 +1,71 @@
+{
+  "url": "http://localhost:8765/kendydoor/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Roztažené fotky >1,3× (mobil, 1): kendydoor/logo.jpg nat 184 px, vykresleno 245 px (1.33×)",
+    "Web má noindex (u ostrého webu pravděpodobně chyba)",
+    "Dotykové cíle <40 px na mobilu: 19× (např. a.skip \"Preskočiť na obsah\" 162×28; a.logo \"\" 123×34; a \"Kolekcie\" 59×37; a \"Dvere na mieru\" 102×37)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 2.06,
+    "nejvetsi_obrazek_PC": {
+      "kB": 76,
+      "url": "http://localhost:8765/kendydoor/img/dvere-vidiecky1-06-393.webp"
+    },
+    "snimku_PC": 10,
+    "preneseno_mobil_MB": 0.99,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 74,
+      "url": "http://localhost:8765/kendydoor/img/dvere-vidiecky1-03-393.webp"
+    },
+    "snimku_mobil": 10,
+    "seo": {
+      "title": "KENDY DOOR – atypické interiérové dvere, Prešov",
+      "description": "Atypické interiérové dvere KENDY DOOR z Prešova: kolekcie dverí, dvere na mieru, dyhy a termoplastic",
+      "lang": "sk",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/kendydoor/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 19,
+    "font_nadpis": "Archivo",
+    "font_text": "Archivo",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 81
+    }
+  }
+}

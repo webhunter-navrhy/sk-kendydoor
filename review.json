@@ -1,17 +1,17 @@
 {
   "znamka": 7,
   "slabiny": [
-    "Hlavička na mobilu (390/360 px) je opravená jen napůl. Hamburger je hotový a hlavička je nízká, jenže QA pořád hlásí, že logo.jpg má 184 px a vykresluje se na 368 px (2,00×), takže logo KENDY DOOR je dál měkké. Oprava: dát logo jako SVG nebo ho exportovat aspoň v šířce 400 px a v hlavičce ho zobrazit nanejvýš na ~180 px.",
-    "Sekce Dvere na mieru: dva sloupce jsou hotové a světlý pás nad sekcí zmizel. Fotka je ale pořád jen detail kliky a kusu dýhy, není vidět celé atypické dveře, a na mobilu se uřízne stejně. Oprava: použít fotku celých dveří v interiéru, nebo nastavit object-position tak, aby byly vidět celé dveře. Výšku dát aspoň 420 px na PC a na mobilu poměr 4:5.",
-    "Kontakt na mobilu se nezměnil. Telefony 0948 766 699 a 0948 766 572, odkazy info@ a obchod@kendydoor.sk a „Zobraziť na mape“ mají podle QA dotykovou plochu pořád jen 16–19 px. Oprava: každý kontakt udělat jako blokový řádek nebo tlačítko (tel:, mailto:, mapa) s min-height 44 px a paddingem 12 px. K tomu odstranit prázdný světlý pás nad sekcí Kontakt, hned pod koncem O spoločnosti (PC i mobil)."
+    "Sekce Dvere na mieru (PC i mobil, buňky PC 3–4 a mobil 5): tahle výtka z minulého kola opravená není. Fotka je pořád jen detail kliky, dýhy a skleněného pruhu, celé atypické dveře vidět nejsou a na mobilu se fotka ořízne stejně. Oprava: dát fotku celých dveří v interiéru (např. z podkladů klienta nebo z kolekcí, kde jsou vidět celé dveře se zárubní). Nebo nastavit object-position tak, aby dveře byly vidět celé. Výšku dát aspoň 420 px na PC a na mobilu poměr 4:5.",
+    "Kolekcie dverí na mobilu (buňky 2–5): 11 modelů ve dvou sloupcích zabere skoro čtyři obrazovky jen s dveřmi. Sekce Dvere na mieru, O spoločnosti a Kontakt jsou pak hodně daleko. Oprava: na 390/360 px zobrazit 3 dveře v řadě (menší karty, mezera 12 px). Nebo ukázat prvních 6 a pod nimi tlačítko „Zobraziť všetkých 11“ (min-height 44 px).",
+    "Hero na PC (buňka 1): nadpis „Interiérové dvere, ktoré sa prispôsobia Vám“ se v úzkém sloupci láme do 5 řádků, takže fotka interiéru vychází menší než blok textu. Oprava: rozšířit textový sloupec na ~45 % a zmenšit h1 tak, aby měl 3 řádky (cca 56 px). Fotku interiéru zvětšit na výšku celého hero, aby obrázek dominoval."
   ],
   "zavazne": [],
   "silne": [
-    "Brand drží: všude je červená a grafit z loga KENDY DOOR a logo je vlevo v hlavičce.",
-    "Skutečné modely dveří s filtrem deseti kolekcí dávají webu jasný katalogový nápad z oboru a nejsou generickou šablonou.",
-    "Fakta (roky 1998/2004/2011, adresy, IČO, telefony) působí převzatě z podkladů, nic není přikrášlené čísly ani recenzemi.",
-    "Žádné přetečení na 6 šířkách, malá datová náročnost (0,46 MB), hamburger menu na mobilu už funguje."
+    "Logo KENDY DOOR v hlavičce je teď ostré i na mobilu. QA už nehlásí zvětšení a hamburger s nízkou hlavičkou funguje.",
+    "Kontakty na mobilu mají podle QA dostatečnou dotykovou plochu (zbývá jen skip link). Prázdný pás nad sekcí Kontakt zmizel.",
+    "Brand drží: klientova červená jako jediný akcent, logo vlevo, Archivo s háčky v pořádku a čistý světlý layout bez AI vzorů.",
+    "Obsah je pravdivý a konkrétní: historie 1998/2004/2011, 10 kolekcí jako filtry, reálné kontakty, IČO/DIČ a poznámka, že obrázky jsou ilustrační. Nic nepřetéká na žádné ze 6 šířek."
   ],
-  "verdikt": "Kolo pomohlo: je tu hamburger, dva sloupce u Dvere na mieru a světlý pás pod kolekcemi zmizel. Logo je ale pořád zvětšené 2×, fotka atypických dveří ukazuje jen kliku a kontakty na mobilu mají drobné dotykové plochy, takže známka zůstává 7 a návrh je potřeba ještě opravit.",
-  "_hash": "4608bdf5fe21d9a684b8f051ac2d331f9e1e4390"
+  "verdikt": "Dvě ze tří výtek jsou opravené (logo, kontakty s pásem nad Kontaktem). Fotka v sekci Dvere na mieru je pořád jen detail kliky, takže známka zůstává 7. Po výměně této fotky za celé dveře je web blízko k odeslání.",
+  "_hash": "70a635841e2d561128fa7da008fbf420a77c2a36"
 }

@@ -32,18 +32,18 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 0.45,
+    "preneseno_PC_MB": 0.46,
     "nejvetsi_obrazek_PC": {
       "kB": 46,
       "url": "https://webhunter-navrhy.github.io/sk-kendydoor/img/hero-976.webp"
     },
-    "snimku_PC": 5,
-    "preneseno_mobil_MB": 0.19,
+    "snimku_PC": 4,
+    "preneseno_mobil_MB": 0.41,
     "nejvetsi_obrazek_mobil": {
       "kB": 46,
       "url": "https://webhunter-navrhy.github.io/sk-kendydoor/img/hero-976.webp"
     },
-    "snimku_mobil": 8,
+    "snimku_mobil": 7,
     "seo": {
       "title": "KENDY DOOR – atypické interiérové dvere, Prešov",
       "description": "Atypické interiérové dvere KENDY DOOR z Prešova: kolekcie dverí, dvere na mieru, dyhy a termoplastic",
@@ -63,7 +63,7 @@
     "font_text": "Archivo",
     "podstranky": {
       "stranek": 1,
-      "obrazku": 83
+      "obrazku": 81
     }
   }
 }

@@ -1,17 +1,18 @@
 {
   "znamka": 7,
   "slabiny": [
-    "Sekce Dvere na mieru (PC i mobil, buňky PC 3–4 a mobil 5): tahle výtka z minulého kola opravená není. Fotka je pořád jen detail kliky, dýhy a skleněného pruhu, celé atypické dveře vidět nejsou a na mobilu se fotka ořízne stejně. Oprava: dát fotku celých dveří v interiéru (např. z podkladů klienta nebo z kolekcí, kde jsou vidět celé dveře se zárubní). Nebo nastavit object-position tak, aby dveře byly vidět celé. Výšku dát aspoň 420 px na PC a na mobilu poměr 4:5.",
-    "Kolekcie dverí na mobilu (buňky 2–5): 11 modelů ve dvou sloupcích zabere skoro čtyři obrazovky jen s dveřmi. Sekce Dvere na mieru, O spoločnosti a Kontakt jsou pak hodně daleko. Oprava: na 390/360 px zobrazit 3 dveře v řadě (menší karty, mezera 12 px). Nebo ukázat prvních 6 a pod nimi tlačítko „Zobraziť všetkých 11“ (min-height 44 px).",
-    "Hero na PC (buňka 1): nadpis „Interiérové dvere, ktoré sa prispôsobia Vám“ se v úzkém sloupci láme do 5 řádků, takže fotka interiéru vychází menší než blok textu. Oprava: rozšířit textový sloupec na ~45 % a zmenšit h1 tak, aby měl 3 řádky (cca 56 px). Fotku interiéru zvětšit na výšku celého hero, aby obrázek dominoval."
+    "Hero na mobilu (390/360 px, mobil buňka 1): fotka interiéru se zmenšila na náhled asi 100 px vedle odstavce. Nadpis má 5 řádků a slovo „Vám“ zůstává na posledním řádku samo. Oprava: pod 600 px dát hero do jednoho sloupce. Fotku dát přes celou šířku pod h1 (nebo nad něj) s poměrem 4:3, h1 zmenšit na cca 36 px a mezi „prispôsobia“ a „Vám“ dát nbsp.",
+    "Hero na PC (buňka 1): nadpis už má 3 řádky, ale fotka interiéru má jen asi 580×440 px a je stejně vysoká jako text, takže nedominuje. Pod hero zůstává asi 150 px prázdného místa, než začnou Kolekcie dverí. Oprava: fotku roztáhnout na celou výšku hero (min. 560 px, nebo až k pravému okraji) a zmenšit mezeru mezi hero a sekcí Kolekcie na stejný rytmus jako mezi ostatními sekcemi.",
+    "Sekce Dvere na mieru (PC buňka 3, mobil buňka 4): dveře jsou teď vidět celé, ale je to znovu fotka z hero, jen jinak oříznutá, takže se na stránce opakuje. Oprava: použít jinou fotku z podkladů nebo z webu klienta, nejlépe atypické dveře nebo zárubeň v jiném interiéru. Když jiná není, v hero použít celý záběr a tady jen výřez dveří s jiným tónem pozadí."
   ],
-  "zavazne": [],
+  "zavazne": [
+    "Hero na mobilu (mobil buňka 1): rozbitá mřížka. Hlavní fotka se zobrazuje jako miniaturní náhled vedle odstavce, místo aby byla přes celou šířku. Na první obrazovce telefonu skoro není vidět, a působí to jako chyba layoutu."
+  ],
   "silne": [
-    "Logo KENDY DOOR v hlavičce je teď ostré i na mobilu. QA už nehlásí zvětšení a hamburger s nízkou hlavičkou funguje.",
-    "Kontakty na mobilu mají podle QA dostatečnou dotykovou plochu (zbývá jen skip link). Prázdný pás nad sekcí Kontakt zmizel.",
-    "Brand drží: klientova červená jako jediný akcent, logo vlevo, Archivo s háčky v pořádku a čistý světlý layout bez AI vzorů.",
-    "Obsah je pravdivý a konkrétní: historie 1998/2004/2011, 10 kolekcí jako filtry, reálné kontakty, IČO/DIČ a poznámka, že obrázky jsou ilustrační. Nic nepřetéká na žádné ze 6 šířek."
+    "Výtky z minulého kola jsou opravené: kolekce dveří na mobilu jsou po 3 v řadě (11 modelů zabere asi 1,5 obrazovky) a v sekci Dvere na mieru jsou vidět celé dveře, na mobilu na výšku.",
+    "Brand drží: logo KENDY DOOR je vlevo v hlavičce, akcent je klientova červená, používá se jen jedno písmo (Archivo) a diakritika je v pořádku.",
+    "Obsah sedí s podklady: historie 1998/2004/2011, 132 dekorů, IČO/DIČ, dvě provozovny s telefony a e-maily. Nic není vymyšlené a QA nenašla žádné přetečení na 6 šířkách."
   ],
-  "verdikt": "Dvě ze tří výtek jsou opravené (logo, kontakty s pásem nad Kontaktem). Fotka v sekci Dvere na mieru je pořád jen detail kliky, takže známka zůstává 7. Po výměně této fotky za celé dveře je web blízko k odeslání.",
-  "_hash": "70a635841e2d561128fa7da008fbf420a77c2a36"
+  "verdikt": "opravit – všechny tři minulé výtky jsou opravené (hero na PC jen zčásti). Na mobilu se ale rozbil hero, fotka je zmenšená na miniaturu, a to se klientovi poslat nedá. Po opravě mobilního hero a zvětšení fotky na PC je web blízko 8.",
+  "_hash": "7d96de5fa91a474cbf8daf0aa6480f2b42f856d2"
 }
